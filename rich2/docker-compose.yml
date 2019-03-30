@@ -1,0 +1,11 @@
+version: '2'
+services:
+
+  config-webserver:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: /app/start.sh
